@@ -1,0 +1,18 @@
+.main {
+	// position: fixed;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+	// width: 100%;
+	// height: auto;
+	background-color: red;
+}
+
+.wrapper {}
+
+.body {
+	display: flex;
+	justify-content: space-between;
+	grid-gap: 10px;
+	padding: 0px 40px;
+}
