@@ -1,0 +1,33 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+}
+
+.item {
+	margin-right: 32px;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: 'Gilroy';
+
+	list-style: none;
+	color: $white;
+	text-decoration: none;
+
+	a {
+		text-decoration: none;
+		color: $white;
+		min-width: max-content;
+	}
+}
+
+.item:last-child {
+	margin-right: 0px;
+}

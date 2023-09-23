@@ -8,10 +8,9 @@ interface Props extends AllHTMLAttributes<HTMLElement> {
 }
 
 function Wrapper({ tag: Tag = 'div', className, children, ...props }: Props) {
-
 	return (
 		<Tag
-			className={clsx(classes.wrapper, className)}
+			className={clsx(classes.Wrapper, className)}
 			{...props}
 		>
 			{children}

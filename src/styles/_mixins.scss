@@ -1,6 +1,6 @@
 @import "./variables";
 
-@mixin font-face($name, $style: 'normal', $weight: 400, $swap: true, $woff, $woff2) {
+@mixin font-face($name, $style: 'normal', $weight: 400, $swap: true, $woff) {
 	@font-face {
 		font-family: $name;
 		font-style: $style;
@@ -11,8 +11,7 @@
 
 		font-weight: $weight;
 
-		src: url($woff2) format("woff2"),
-		url($woff) format("woff");
+		src: url($woff) format("woff");
 		@content;
 	}
 }

@@ -28,7 +28,7 @@
       "@widgets/*": ["./src/widgets/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/shared/i18n.js"],
   "exclude": ["node_modules"]
 	
 }

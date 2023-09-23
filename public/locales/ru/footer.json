@@ -1,0 +1,27 @@
+{
+	"footerLeft": {
+		"title": "Эмоции, которыми ты захочешь делиться",
+		"text": "Лови момент! <br /> Открой Таджикистан для себя",
+		"button": "Все наши туры"
+	},
+	"footerContacts": {
+		"title": "Контакты",
+		"address": "Дущанбе Нисор Мухаммад, 5/5 БЦ 'Regus'",
+		"lookOnTheMap": "Показать на карте",
+		"tell": "Звоните и пишите нам!"
+	},
+	"footerSubscribe": {
+		"title": "Подпишитесь"
+	},
+	"footerNavigation": {
+		"navigation": "Навигация",
+		"main": "Главная",
+		"outTours": "Туры",
+		"aboutUs": "О нас",
+		"WhereToGo": "Куда сходить"
+	},
+	"footerBottom": {
+		"securityPolicy": "Политика безопасности",
+		"developedByBOBO": "Разработано в BOBO"
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"footerLeft": {
+		"title": "Emotions you want to share",
+		"text": "Seize the moment! <br /> Discover Tajikistan for yourself",
+		"button": "All our tours"
+	},
+	"footerContacts": {
+		"title": "Contacts",
+		"address": "Dushanbe Nisor Muhammad, 5/5 BC 'Regus'",
+		"lookOnTheMap": "Show on the map",
+		"tell": "Call and write to us!"
+	},
+	"footerSubscribe": {
+		"title": "Subscribe"
+	},
+	"footerNavigation": {
+		"navigation": "Navigation",
+		"main": "Home",
+		"outTours": "Tours",
+		"aboutUs": "About Us",
+		"WhereToGo": "Where to go"
+	},
+	"footerBottom": {
+		"securityPolicy": "security policy",
+		"developedByBOBO": "Developed by BOBO"
+	}
+}

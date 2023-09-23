@@ -1,0 +1,35 @@
+@import 'src/styles/variables';
+
+.footer_contacts {
+	display: flex;
+	flex-direction: column;
+
+	a {
+		text-decoration: none;
+	}
+
+	p {
+		color: $white;
+	}
+}
+
+.title {
+	margin-bottom: 28px;
+}
+
+.address {
+	margin-bottom: 12px;
+}
+
+.map {
+	margin-bottom: 48px;
+}
+
+.number {
+	margin-bottom: 12px;
+}
+
+.tell {
+	padding-bottom: 10px;
+	margin-bottom: auto;
+}

@@ -9,11 +9,13 @@ function Burger() {
 	const { isOpen } = useAppSelector(state => state.menu)
 	const dispatch = useAppDispatch()
 	return (
-		<button
-			className={clsx(classes.burger, isOpen && classes.open)}
-			onClick={() => dispatch(toggleMenu())} >
-			<span />
-		</button>
+		<div className={classes.body} >
+			<button
+				className={clsx(classes.burger, isOpen && classes.open)}
+				onClick={() => dispatch(toggleMenu())} >
+				<span />
+			</button>
+		</div>
 	)
 }
 export { Burger }

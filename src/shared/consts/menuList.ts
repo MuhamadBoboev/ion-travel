@@ -1,15 +1,13 @@
 export const menuList = [
-	{name: 'О проекте', href: '/about-project'},
-	{name: 'Карта', href: '/map'},
-	{name: 'Куда сходить?', href: 'where-to-go'},
-	{name: 'Контакты', href: '/contacts'},
-	{name: 'asd', href: 'asd'},
+	{name: 'aboutProject', href: '/about-project'},
+	{name: 'map', href: '/map'},
+	{name: 'whereToGo', href: 'where-to-go'},
+	{name: 'contacts', href: '/contacts'}
 ]
 
 export const menuMobileList = [
-	{name: 'О проекте', href: '/about-project'},
-	{name: 'Карта', href: '/map'},
-	{name: 'Куда сходить?', href: 'where-to-go'},
-	{name: 'Контакты', href: '/contacts'},
-	{name: 'asd', href: 'asd'},
+	{name: 'aboutProject', href: '/about-project'},
+	{name: 'map', href: '/map'},
+	{name: 'whereToGo', href: 'where-to-go'},
+	{name: 'contacts', href: '/contacts'}
 ]

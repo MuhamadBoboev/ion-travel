@@ -1,0 +1,41 @@
+@import 'src/styles/variables';
+
+.footer_left {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer_left__img {
+	margin-bottom: 80px;
+}
+
+.title {
+	color: $white;
+	font-size: 2.25rem;
+	line-height: 110%;
+	margin-bottom: 28px;
+}
+
+.text {
+	color: $white;
+	margin-bottom: 88px;
+}
+
+// .text {
+// 	font-size: 1rem;
+// 	line-height: 150%;
+// 	color: $white;
+// }
+
+.button {
+	display: block;
+	padding: 20px 40px;
+	color: $black;
+	background-color: $primary;
+	border-radius: 40px;
+	font-weight: 500;
+	font-family: 'Gilroy';
+	font-size: 1rem;
+	width: max-content;
+	text-decoration: none;
+}

@@ -1,18 +1,26 @@
 .main {
 	// position: fixed;
-	// top: 0;
-	// left: 0;
-	// right: 0;
-	// width: 100%;
-	// height: auto;
-	background-color: red;
+	top: 40px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: auto;
+	background-color: rgb(22, 201, 224);
 }
-
-.wrapper {}
 
 .body {
 	display: flex;
 	justify-content: space-between;
 	grid-gap: 10px;
 	padding: 0px 40px;
+}
+
+.header_left {
+	display: flex;
+	grid-gap: 60px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
 }

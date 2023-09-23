@@ -1,0 +1,84 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.typography {
+	font-family: 'Gilroy';
+	color: $textTypography;
+	margin: 0;
+	padding: 0;
+}
+
+.type {
+	&-h1 {
+		font-size: 3.125rem;
+		line-height: 112%;
+		font-weight: 500;
+	}
+
+	&-h2 {
+		font-size: 2.75rem;
+		line-height: 109%;
+		font-weight: 500;
+	}
+
+	&-h3 {
+		font-size: 2.25rem;
+		line-height: 111%;
+		font-weight: 500;
+	}
+
+	&-h4 {
+		font-size: 1.75rem;
+		line-height: 114%;
+		font-weight: 500;
+	}
+
+	&-h5 {
+		font-size: 1.5rem;
+		line-height: 116%;
+		font-weight: 500;
+	}
+
+	&-h6 {
+		font-size: 1.25rem;
+		line-height: 128%;
+		font-weight: 500;
+	}
+
+	&-xl {
+		font-size: 1.188rem;
+		line-height: 168%;
+		font-weight: 500;
+	}
+
+	&-l {
+		font-size: 1.083rem;
+		line-height: 164%;
+		font-weight: 500;
+	}
+
+	&-m {
+		font-size: 0.938rem;
+		line-height: 164%;
+		font-weight: 400;
+	}
+
+	&-s {
+		font-size: 0.813rem;
+		line-height: 164%;
+		font-weight: 400;
+	}
+
+	&-xs {
+		font-size: 0.688em;
+		line-height: 164%;
+		font-weight: 400;
+	}
+
+	&-xxs {
+		font-size: 0.563rem;
+		line-height: 164%;
+		font-weight: 400;
+	}
+
+}

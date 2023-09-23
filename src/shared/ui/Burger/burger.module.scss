@@ -1,6 +1,17 @@
 @import "src/styles/variables";
 @import "src/styles/mixins";
 
+.body {
+	background-color: $white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 35px;
+	// min-height: 64px;
+	// min-width: 64px;
+}
+
 .burger {
 	background: none;
 	border: none;
@@ -9,7 +20,6 @@
 	width: 24px;
 	height: 16px;
 	position: relative;
-
 	// @media (min-width: 971px) {
 	// 	display: none;
 	// }

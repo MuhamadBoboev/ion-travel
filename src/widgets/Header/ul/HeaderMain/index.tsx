@@ -1,9 +1,11 @@
+'use client'
 import classes from './header-main.module.scss'
 import { Wrapper } from '@/shared/ui/Wrapper'
 import { HeaderMenu } from '../HeaderMenu'
 import { HeaderRight } from '../HeaderRight'
 import { Burger } from '@/shared/ui/Burger'
 import { MenuMobile } from '../MenuMobile'
+import Link from 'next/link'
 
 
 function Header() {
@@ -16,7 +18,9 @@ function Header() {
 						<HeaderMenu />
 						<MenuMobile />
 					</div>
-					<img src='assets/img/logo.svg' alt='logo' width={108} height={68} />
+					<Link href='/' className={classes.logo}>
+						<img src='assets/img/logo.svg' alt='logo' width={108} height={68} />
+					</Link>
 					<HeaderRight />
 				</div>
 			</Wrapper>

@@ -1,0 +1,29 @@
+@import 'src/styles/variables';
+
+.footer_navigation {
+	p {
+		color: $white;
+	}
+}
+
+.items {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.title {
+	margin-bottom: 28px;
+}
+
+.item {
+	margin-bottom: 48px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.item:last-child {
+	margin-bottom: 0;
+}

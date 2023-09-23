@@ -1,0 +1,10 @@
+{
+	"nav": {
+		"text": "Hello",
+		"aboutProject": "About the project",
+		"map": "Map",
+		"whereToGo": "Where to go?",
+		"contacts": "Contacts"
+	},
+	"ourTours": "Our tours"
+}
