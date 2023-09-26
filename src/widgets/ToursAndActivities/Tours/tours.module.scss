@@ -1,0 +1,188 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.tours {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 32px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	align-items: end;
+
+	@media (max-width: $desktopSmall) {
+		grid-gap: 24px;
+	}
+
+	@media (max-width: $desktop) {
+		// height: 200px;
+	}
+
+}
+
+.tour {
+
+	img {
+		transform: scale(1.1);
+		transition: all .25s;
+	}
+
+	&:hover {
+		img {
+			transform: scale(1);
+		}
+	}
+
+
+}
+
+.tour:nth-child(1) {
+	.block_img {
+		height: 412px;
+
+		@media (max-width: $desktopSmall) {
+			height: 312px;
+		}
+
+		@media (max-width: $desktop) {
+			height: 200px;
+		}
+	}
+
+}
+
+.tour:nth-child(2) {
+	.block_img {
+		height: 352px;
+
+		@media (max-width: $desktopSmall) {
+			height: 252px;
+		}
+
+		@media (max-width: $desktop) {
+			height: 160px;
+		}
+	}
+}
+
+.tour:nth-child(3) {
+	.block_img {
+		height: 460px;
+
+		@media (max-width: $desktopSmall) {
+			height: 360px;
+		}
+
+		@media (max-width: $desktop) {
+			height: 220px;
+		}
+	}
+}
+
+.tour:nth-child(4) {
+	.block_img {
+		height: 516px;
+
+		@media (max-width: $desktopSmall) {
+			height: 416px;
+		}
+
+		@media (max-width: $desktop) {
+			height: 258px;
+		}
+	}
+}
+
+.tour {
+	// position: relative;
+	// border-radius: 40px;
+	// overflow: hidden;
+}
+
+.block_img {
+	border-radius: 40px;
+	overflow: hidden;
+
+	@media (max-width: $desktopSmall) {
+		border-radius: 20px;
+	}
+}
+
+.body {
+	position: relative;
+	// padding: 36px;
+	// position: absolute;
+	// z-index: 1;
+	// top: 36px;
+	// left: 36px;
+	// right: 36px;
+	// text-decoration: none;
+}
+
+.link {
+	// text-decoration: none;
+	position: absolute;
+	z-index: 5;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	width: 80%;
+	height: max-content;
+	color: $white;
+	display: flex;
+}
+
+.text {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: 500;
+
+	@media (max-width: $desktopSmall) {
+		font-size: 13px;
+		font-weight: 400;
+		// @include text('s')
+	}
+
+	@media (max-width: $tabletSmall) {
+		font-size: 15px;
+		font-weight: 500;
+		// @include text('s')
+	}
+
+}
+
+.block_img {
+	position: relative;
+	display: block;
+	max-width: 100%;
+
+	&::after {
+		content: '';
+		padding-bottom: 100%;
+		display: block;
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.00) 36.17%);
+	z-index: 2;
+}

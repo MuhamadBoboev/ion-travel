@@ -5,9 +5,7 @@ import Link from 'next/link'
 import { useTranslation, Trans } from 'react-i18next'
 
 function HeaderMenu() {
-	// debugger
 	const { t } = useTranslation('header')
-	// debugger
 	return (
 		<nav className={classes.nav} >
 			<ul className={classes.list}>

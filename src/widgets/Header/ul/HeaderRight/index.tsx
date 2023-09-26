@@ -9,7 +9,9 @@ function HeaderRight() {
 	return (
 		<div className={classes.wrapper}>
 			<Link className={classes.tell} href='tell:+992 900 00 00 00'>+992 900 00 00 00</Link>
-			<LanguageButton />
+			<div className={classes.language_buttons} >
+				<LanguageButton />
+			</div>
 			<Link href={'sda'} className={classes.button} >
 				{t('ourTours')}
 			</Link>

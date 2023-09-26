@@ -1,12 +1,20 @@
 import { Wrapper } from '@/shared/ui/Wrapper'
+import { AboutProject } from '@/widgets/AboutProject'
+import { Advertising } from '@/widgets/Advertising'
 import { Banner } from '@/widgets/Banner'
-import Image from 'next/image'
+import { Gallery } from '@/widgets/Gallery'
+import { Timeline } from '@/widgets/Timeline'
+import { ToursAndActivities } from '@/widgets/ToursAndActivities'
 
 export default function Home() {
 	return (
 		<Wrapper>
-			<Banner />
-			<h1>Main content</h1>
+			{/* <Banner /> */}
+			<ToursAndActivities />
+			{/* <Advertising /> */}
+			{/* <Timeline /> */}
+			{/* <Gallery /> */}
+			{/* <AboutProject /> */}
 		</Wrapper>
 	)
 }

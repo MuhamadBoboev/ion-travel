@@ -1,0 +1,18 @@
+@import 'src/styles/variables';
+
+.text {
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 112%;
+	font-family: 'Gilroy';
+	margin: 0;
+	padding: 0;
+}
+
+.text_black {
+	color: $text1;
+}
+
+.text_white {
+	color: $white;
+}

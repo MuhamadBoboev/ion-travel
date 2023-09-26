@@ -4,11 +4,21 @@
 .nav {
 	display: flex;
 	align-items: center;
+
+	@media (max-width: $desktopSmall) {
+		display: none;
+	}
 }
 
 .list {
 	display: flex;
 	align-items: center;
+	padding: 0;
+	margin: 0;
+
+	@media (max-width: $desktopMedium) {
+		margin-left: 20px;
+	}
 }
 
 .item {
@@ -25,6 +35,10 @@
 		text-decoration: none;
 		color: $white;
 		min-width: max-content;
+	}
+
+	@media (max-width: $desktopMedium) {
+		margin-right: 20px;
 	}
 }
 

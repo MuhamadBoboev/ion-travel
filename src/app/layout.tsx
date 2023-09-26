@@ -24,7 +24,7 @@ export default function RootLayout({
 			<body>
 				<div className='app-js-group' >
 					<Providers>
-						<Header />
+						{/* <Header /> */}
 						<main className={inter.className}>
 							{children}
 						</main>

@@ -1,0 +1,110 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.wrapper {
+	margin-bottom: 120px;
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	box-sizing: border-box;
+
+	@media (max-width: $desktopSmall) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media (max-width: $tabletSmall) {}
+}
+
+.info_left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.left_block {
+	display: flex;
+	justify-content: space-between;
+	grid-gap: 50px;
+
+	@media (max-width: $desktopSmall) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media (max-width: $tabletSmall) {}
+}
+
+.title_block {
+	max-width: 417px;
+
+
+
+}
+
+.title {
+	margin: 0;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 112%;
+
+	@media (max-width: $desktopSmall) {
+		font-size: 2.25rem;
+		max-width: 256px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		font-size: 1.5rem;
+	}
+}
+
+.info_right {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: end;
+
+	@media (max-width: $desktopSmall) {
+		max-width: 256px;
+	}
+}
+
+
+.text_1 {
+	@media (max-width: $desktopSmall) {
+		font-size: 13px;
+		// @include text('mm')
+	}
+
+	@media (max-width: $tabletSmall) {
+		font-size: 11px;
+		// @include text('mm')
+	}
+}
+
+.text_2 {
+	@media (max-width: $desktopSmall) {
+		// font-size: 13px;
+		@include text('s')
+	}
+
+	@media (max-width: $tabletSmall) {
+		// font-size: 11px;
+		@include text('xs')
+	}
+}
+
+.text_3 {
+	max-width: 400px;
+
+	@media (max-width: $desktopSmall) {
+		// font-size: 13px;
+		@include text('s')
+	}
+
+	@media (max-width: $tabletSmall) {
+		// font-size: 11px;
+		@include text('s')
+	}
+}

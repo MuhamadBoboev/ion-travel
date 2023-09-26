@@ -1,0 +1,62 @@
+@import 'src/styles/variables';
+
+.form {}
+
+.body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 64px;
+	padding: 48px;
+	border-radius: 28px;
+	border: 1px solid $border;
+
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	margin-bottom: 28px;
+}
+
+.title {
+	margin-bottom: 28px;
+}
+
+.right {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 32px;
+}
+
+.input {
+	padding: 20px 28px;
+	color: $text2;
+	font-weight: 500;
+	font-size: 0.950rem;
+	border-radius: 80px;
+	border: 1px solid $border;
+	width: 100%;
+	box-sizing: border-box;
+
+	&:focus {
+		outline: 2px solid $border;
+		// outline: none;
+		border: 1px solid transparent;
+
+	}
+
+}
+
+.button {
+	background-color: $yellow;
+	border-radius: 40px;
+	border: none;
+	width: 100%;
+
+	p {
+		padding: 20px 40px;
+	}
+}

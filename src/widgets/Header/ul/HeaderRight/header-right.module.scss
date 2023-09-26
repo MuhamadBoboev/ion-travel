@@ -1,19 +1,41 @@
 @import 'src/styles/variables';
+@import 'src/styles/mixins';
 
 .wrapper {
 	display: flex;
 	align-items: center;
 	grid-gap: 40px;
+
+	@media (max-width: $desktopSmall) {
+		width: 100%;
+		display: flex;
+		justify-content: end;
+	}
 }
 
 .tell {
 	color: $white;
 	font-size: 15px;
-
 	text-decoration: none;
 	color: $white;
 	min-width: max-content;
 
+	@media (max-width: $desktopSmall) {
+		width: 100%;
+		display: flex;
+		justify-content: end;
+	}
+
+	@media (max-width: $tabletSmall) {
+		display: none;
+	}
+
+}
+
+.language_buttons {
+	@media (max-width: $tabletSmall) {
+		display: none;
+	}
 }
 
 .button {
@@ -28,4 +50,8 @@
 	border-radius: 40px;
 	text-decoration: none;
 	min-width: max-content;
+
+	@media (max-width: $desktopSmall) {
+		display: none;
+	}
 }
