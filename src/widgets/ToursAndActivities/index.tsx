@@ -18,7 +18,7 @@ function ToursAndActivities() {
 						</Button>
 					</div>
 					<div className={classes.title_block}>
-						<h3 className={classes.title}>Эмоции, которыми   ты захочешь делиться</h3>
+						<h3 className={classes.title}>Эмоции, которыми ты захочешь делиться</h3>
 					</div>
 				</div>
 				<div className={classes.info_right}>

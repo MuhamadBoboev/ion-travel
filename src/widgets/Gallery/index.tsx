@@ -4,7 +4,16 @@ import classes from './gallery.module.scss'
 import Link from 'next/link'
 import { GaleryDate } from './Galery'
 import { SectionTitle } from '@/shared/ui/SectionTitle'
-import { HandySvg } from 'handy-svg'
+// import { HandySvg } from 'handy-svg'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { A11y } from 'swiper/modules';
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 function Gallery() {
 	return (
@@ -30,19 +39,19 @@ function Gallery() {
 						<Link href={el.link} className={classes.item_body} >
 							<div className={classes.item_info}>
 								<div className={classes.item_text_block}>
-									<Typography className={classes.item_text} size='s'>
+									<Typography className={classes.text_1} size='s'>
 										{el.author}
 									</Typography>
-									<Typography className={classes.item_text} size='l'>
+									<Typography className={classes.text_2} size='l'>
 										{el.location}
 									</Typography>
 								</div>
-								<HandySvg
+								{/* <HandySvg
 									src='/assets/icons/handle.svg'
 									width={48}
 									height={48}
 									alt='handle'
-								/>
+								/> */}
 							</div>
 							<div className={classes.block_img} >
 								<img src={el.img} width={344} height={260} alt={el.location} />
@@ -50,6 +59,34 @@ function Gallery() {
 						</Link>
 					</li>)}
 			</ul>
+			<Swiper
+				modules={[A11y]}
+				spaceBetween={10}
+				slidesPerView={1.1}
+				className={classes.slider}
+			>
+				{GaleryDate.map((el) =>
+					<SwiperSlide key={el.author} className={classes.sl_item}>
+						<Link href={el.link} className={classes.item_body} >
+							<div className={classes.item_info}>
+								<div className={classes.item_text_block}>
+									<Typography className={classes.text_1} size='s'>
+										{el.author}
+									</Typography>
+									<Typography className={classes.text_2} size='l'>
+										{el.location}
+									</Typography>
+								</div>
+							</div>
+							<div className={classes.block_img} >
+								<img src={el.img} width={344} height={260} alt={el.location} />
+							</div>
+						</Link>
+					</SwiperSlide>)}
+			</Swiper>
+			<Link href='asd' className={classes.show_all} >
+				Все фотографии
+			</Link>
 		</div>
 	)
 }

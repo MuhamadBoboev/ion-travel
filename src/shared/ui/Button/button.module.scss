@@ -2,146 +2,149 @@
 @import "src/styles/mixins";
 
 .button {
-  font-family: inherit;
-  padding: 11px 24px;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #000;
-  text-decoration: none;
-  background: none;
-  border-radius: 12px;
-  cursor: pointer;
-  display: inline-flex;
-  transition: all 250ms;
-  box-sizing: border-box;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+	font-family: inherit;
+	padding: 11px 24px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	color: #000;
+	text-decoration: none;
+	background: none;
+	border-radius: 12px;
+	cursor: pointer;
+	display: inline-flex;
+	transition: all 250ms;
+	box-sizing: border-box;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
 
-  &:disabled {
-    opacity: .6;
-    cursor: not-allowed;
-  }
+	&:disabled {
+		opacity: .6;
+		cursor: not-allowed;
+	}
 }
 
 // sizes
 
 .size-large {
-  font-size: 15px;
-  line-height: 24px;
+	font-size: 15px;
+	line-height: 24px;
 }
 
 .size-small {
-  font-size: 13px;
-  line-height: 20px;
+	font-size: 13px;
+	line-height: 20px;
 
-  @media (max-width: $mobileLarge) {
-    font-size: 15px;
-    line-height: 24px;
-  }
+	@media (max-width: $mobileLarge) {
+		font-size: 15px;
+		line-height: 24px;
+	}
 }
 
 .size-moreButton {
-  min-width: 192px;
-  font-size: 13px;
-  line-height: 20px;
+	min-width: 192px;
+	font-size: 13px;
+	line-height: 20px;
 
-  @media (max-width: $desktopSmall) {
-    font-size: 11px;
-    line-height: 16px;
-    letter-spacing: .4px;
-    min-width: auto;
-    padding: 7px 11px;
-  }
+	@media (max-width: $desktopSmall) {
+		font-size: 11px;
+		line-height: 16px;
+		letter-spacing: .4px;
+		min-width: auto;
+		padding: 7px 11px;
+	}
 }
 
 // border-radius
 
 .radius-large {
-  border-radius: 12px;
+	border-radius: 12px;
 }
 
 .radius-small {
-  border-radius: 8px;
+	border-radius: 8px;
 }
 
 .fullWidth {
-  width: 100%;
+	width: 100%;
 }
 
 // colors
 
 .primary {
-  background: $primary;
-  color: #fff;
-  border: 1px solid $primary;
+	background: $button;
+	color: #fff;
+	border: 1px solid $button;
 
-  &:hover {
-    background: darken($primary, 2%);
-    border-color: darken($primary, 2%);
-  }
+	&:hover {
+		background: darken($button, 2%);
+		border-color: darken($button, 2%);
+	}
 
-  &:active {
-    background: darken($primary, 4%);
-    border-color: darken($primary, 4%);
-  }
+	&:active {
+		background: darken($button, 4%);
+		border-color: darken($button, 4%);
+	}
 
-  &:disabled {
-    &:hover,
-    &:active {
-      background: $primary;
-      color: #fff;
-      border-color: $primary;
-    }
-  }
+	&:disabled {
+
+		&:hover,
+		&:active {
+			background: $button;
+			color: #fff;
+			border-color: $button;
+		}
+	}
 }
 
 .primaryOutline {
-  background: none;
-  color: $primary;
-  border: 1px solid $primary;
+	background: none;
+	color: $primary;
+	border: 1px solid $button;
 
-  &:hover {
-    background: $primary;
-    color: #fff;
-  }
+	&:hover {
+		background: $button;
+		color: #fff;
+	}
 
-  &:active {
-    background: darken($primary, 4%);
-    border-color: darken($primary, 4%);
-  }
+	&:active {
+		background: darken($button, 4%);
+		border-color: darken($button, 4%);
+	}
 
-  &:disabled {
-    &:hover,
-    &:active {
-      background: none;
-      color: $primary;
-      border-color: $primary;
-    }
-  }
+	&:disabled {
+
+		&:hover,
+		&:active {
+			background: none;
+			color: $button;
+			border-color: $button;
+		}
+	}
 }
 
 .lightOutline {
-  background: none;
-  color: #fff;
-  border: 1px solid #fff;
+	background: none;
+	color: #fff;
+	border: 1px solid #fff;
 
-  &:hover {
-    background: #fff;
-    color: #000;
-  }
+	&:hover {
+		background: #fff;
+		color: #000;
+	}
 
-  &:active {
-    background: darken(#fff, 4%);
-    border-color: darken(#fff, 4%);
-  }
+	&:active {
+		background: darken(#fff, 4%);
+		border-color: darken(#fff, 4%);
+	}
 
-  &:disabled {
-    &:hover,
-    &:active {
-      color: #fff;
-      border-color: #fff;
-    }
-  }
+	&:disabled {
+
+		&:hover,
+		&:active {
+			color: #fff;
+			border-color: #fff;
+		}
+	}
 }

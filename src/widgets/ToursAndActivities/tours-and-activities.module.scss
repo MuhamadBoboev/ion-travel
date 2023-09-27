@@ -3,25 +3,39 @@
 
 .wrapper {
 	margin-bottom: 120px;
+	display: flex;
+	flex-direction: column;
+
+	@media (max-width: $tabletSmall) {
+		margin-bottom: 28px;
+	}
 }
 
 .info {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	box-sizing: border-box;
+	margin-bottom: 16px;
 
 	@media (max-width: $desktopSmall) {
 		display: flex;
 		justify-content: space-between;
 	}
 
-	@media (max-width: $tabletSmall) {}
+	@media (max-width: $tabletSmall) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .info_left {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+
+	@media (max-width: $tabletSmall) {
+		order: 1;
+	}
 }
 
 .left_block {
@@ -34,13 +48,26 @@
 		justify-content: space-between;
 	}
 
-	@media (max-width: $tabletSmall) {}
+	@media (max-width: $tabletSmall) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 16px;
+		margin-bottom: 20px;
+	}
+
 }
 
 .title_block {
 	max-width: 417px;
+	order: 0;
 
+	@media (max-width: $desktopSmall) {
+		margin-right: 10px;
+	}
 
+	@media (max-width: $tabletSmall) {
+		margin-right: 0px;
+	}
 
 }
 
@@ -79,19 +106,24 @@
 
 	@media (max-width: $tabletSmall) {
 		font-size: 11px;
-		// @include text('mm')
+		padding-bottom: 20px !important;
+		margin-bottom: auto;
 	}
 }
 
 .text_2 {
 	@media (max-width: $desktopSmall) {
+
 		// font-size: 13px;
-		@include text('s')
+		@include text('s') {
+			// background-color: red !important
+		}
 	}
 
 	@media (max-width: $tabletSmall) {
-		// font-size: 11px;
-		@include text('xs')
+		font-size: 11px !important;
+		padding: 12px 22.5px !important;
+		// @include text('xs');
 	}
 }
 
@@ -105,6 +137,6 @@
 
 	@media (max-width: $tabletSmall) {
 		// font-size: 11px;
-		@include text('s')
+		@include text('s');
 	}
 }

@@ -17,18 +17,18 @@ function Timeline() {
 							<div className={classes.top}>
 								<div className={classes.info} >
 									<div className={classes.tag} >
-										<Typography size='s' >
+										<Typography size='s' className={classes.text_1}>
 											{el.tag}
 										</Typography>
 									</div>
-									<Typography size='h1'>
+									<Typography size='h1' className={classes.text_2}>
 										{el.name}
 									</Typography>
 								</div>
 								{/* <HandySvg className={classes.item_handle} src='/assets/icons/handle.svg' width={48} height={48} alt='handle' /> */}
 							</div>
 							<div className={classes.text}>
-								<Typography size='l' >
+								<Typography size='l' className={classes.text_3} >
 									{el.description}
 								</Typography>
 							</div>

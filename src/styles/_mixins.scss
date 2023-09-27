@@ -162,7 +162,7 @@
 }
 
 @mixin text($size: 'm') {
-	font-family: 'Gilroy';
+	font-family: 'Gilroy' !important;
 
 	@if ($size=='h1') {
 		font-size: 3.125rem;
@@ -213,15 +213,15 @@
 	}
 
 	@if ($size=='m') {
-		font-size: 0.938rem;
-		line-height: 164%;
-		font-weight: 400;
+		font-size: 0.938rem !important;
+		line-height: 164% !important;
+		font-weight: 400 !important;
 	}
 
 	@if ($size=='s') {
-		font-size: 0.813rem;
-		line-height: 164%;
-		font-weight: 400;
+		font-size: 0.813rem !important;
+		line-height: 164% !important;
+		font-weight: 400 !important;
 	}
 
 	@if ($size=='xs') {

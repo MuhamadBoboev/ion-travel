@@ -18,18 +18,33 @@ function AboutProject() {
 			</div>
 			<div className={classes.right} >
 				<div className={classes.info} >
-					<div className={classes.info_center} >
-						<SectionTitle className={classes.info_center_title}>
-							Немного о нашем проекте
-						</SectionTitle>
-						<Link href='asd' className={classes.info_button}>
-							<Typography size='m'>
-								Все наши туры
-							</Typography>
-						</Link>
+					<div className={classes.info_center_text} >
+						<div className={classes.left_mobile} >
+							<div className={classes.info_left} >
+								<Typography size='m' className={classes.text_1}>
+									Таджикистан место где отдыхают душой и телом
+								</Typography>
+							</div>
+						</div>
+						<div className={classes.info_center}>
+							<SectionTitle className={classes.info_center_title}>
+								Немного о нашем проекте
+							</SectionTitle>
+							<div>
+								<p className={classes.text_5} >
+									Лови момент!
+									Открой Таджикистан для себя
+								</p>
+								<Link href='asd' className={classes.info_button}>
+									<Typography size='m' className={classes.text_2}>
+										Все наши туры
+									</Typography>
+								</Link>
+							</div>
+						</div>
 					</div>
 					<div className={classes.info_right} >
-						<Typography size='l' >
+						<Typography size='l' className={classes.text_3}>
 							Мы знаем, что у Вас есть выбор — благодарим, что выбрали нас!
 							<br />
 							<br />

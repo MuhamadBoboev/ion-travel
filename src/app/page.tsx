@@ -9,12 +9,12 @@ import { ToursAndActivities } from '@/widgets/ToursAndActivities'
 export default function Home() {
 	return (
 		<Wrapper>
-			{/* <Banner /> */}
+			{/* <Banner />
 			<ToursAndActivities />
-			{/* <Advertising /> */}
-			{/* <Timeline /> */}
-			{/* <Gallery /> */}
-			{/* <AboutProject /> */}
+			<Advertising />
+			<Timeline />
+			<Gallery />
+			<AboutProject /> */}
 		</Wrapper>
 	)
 }

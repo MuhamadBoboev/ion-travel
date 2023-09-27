@@ -1,4 +1,5 @@
 @import 'src/styles/variables';
+@import 'src/styles/mixins';
 
 .wrapper {
 	display: flex;
@@ -11,24 +12,60 @@
 	background-size: contain;
 	border-radius: 40px;
 	margin-bottom: 100px;
+
+	@media (max-width: $desktopSmall) {
+		padding: 40px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		padding: 20px;
+	}
 }
 
 .info_block {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 80px;
 	text-align: center;
 	max-width: 800px;
 	margin: 0 auto;
 	margin-bottom: 80px;
+
+
+	@media (max-width: $desktopSmall) {
+		margin-bottom: 40px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		margin-bottom: 28px;
+	}
 }
 
 .section_title {
 	margin-bottom: 40px;
+
+	@media (max-width: $desktopSmall) {
+		@include text('h1');
+		margin-bottom: 28px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		margin-bottom: 24px;
+		font-size: 24px;
+	}
 }
 
 .info_text {
 	margin-bottom: 40px;
+
+	@media (max-width: $desktopSmall) {
+		@include text('l');
+		margin-bottom: 28px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		@include text('s');
+		margin-bottom: 24px;
+	}
 }
 
 .link_button {
@@ -42,6 +79,11 @@
 	p {
 		margin: 0;
 		padding: 20px 40px;
+
+		@media (max-width: $desktopSmall) {
+			padding: 16px 40px;
+			@include text('s')
+		}
 	}
 }
 
@@ -57,6 +99,15 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 24px;
 	list-style: none;
+
+	@media (max-width: $desktopSmall) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 16px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		display: none;
+	}
 }
 
 .item_body {
@@ -72,6 +123,11 @@
 		scale: 1.1;
 	}
 
+	@media (max-width: $desktopSmall) {
+		.item_info {
+			opacity: 1;
+		}
+	}
 
 	&:hover {
 		.item_info {
@@ -98,6 +154,11 @@
 	color: $white;
 	display: flex;
 	justify-content: space-between;
+
+	@media (max-width: $tabletSmall) {
+		left: 16px;
+		bottom: 16px;
+	}
 }
 
 .block_img {
@@ -127,8 +188,40 @@
 	}
 }
 
-.item_text {
+.text_1,
+.text_2 {
 	color: $white;
+}
+
+.slider {
+	width: 100%;
+	margin-bottom: 28px;
+	display: none;
+
+	@media (max-width: $tabletSmall) {
+		display: inherit;
+	}
 
 
+	.block_img {
+		&::after {
+			padding-bottom: 75%;
+		}
+	}
+}
+
+.show_all {
+	display: none;
+	text-decoration: none;
+	@include text('s');
+	padding: 16px 20px;
+	text-align: center;
+	width: -webkit-fill-available;
+	color: $text1;
+	border-radius: 40px;
+	border: 1px solid $border;
+
+	@media (max-width: $tabletSmall) {
+		display: block;
+	}
 }

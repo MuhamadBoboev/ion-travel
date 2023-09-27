@@ -1,4 +1,5 @@
 @import 'src/styles/variables';
+@import 'src/styles/mixins';
 
 .footer_subscribe {
 	p {
@@ -14,6 +15,11 @@
 
 .title {
 	margin-bottom: 28px;
+
+	@media (max-width: $tabletSmall) {
+		font-size: 11px;
+		margin-bottom: 20px;
+	}
 }
 
 .item {
