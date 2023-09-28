@@ -21,21 +21,11 @@
 
 }
 
-.wrapper {
-	padding: 27px;
-
-	@media (max-width: $tabletSmall) {
-		padding: 12px;
-	}
-}
-
 .body {
 	display: flex;
 	justify-content: space-between;
 	grid-gap: 10px;
-	padding: 12px;
-	background-color: $white;
-	border-radius: 80px;
+	padding: 0px 40px;
 
 	@media (max-width: $desktopMedium) {
 		padding: 0px 16px;
@@ -47,7 +37,7 @@
 	}
 
 	@media (max-width: $tabletSmall) {
-		padding: 12px;
+		padding: 0px 4px;
 	}
 }
 

@@ -14,12 +14,12 @@ function Header() {
 			<Wrapper className={classes.wrapper}>
 				<div className={classes.body} >
 					<div className={classes.header_left} >
-						<Burger type='white' />
+						<Burger />
 						<HeaderMenu />
 						<MenuMobile />
 					</div>
 					<Link href='/' className={classes.logo}>
-						<img src='assets/img/logoM.svg' alt='logo' width={108} height={68} />
+						<img src='assets/img/logo.svg' alt='logo' width={108} height={68} />
 					</Link>
 					<HeaderRight />
 				</div>

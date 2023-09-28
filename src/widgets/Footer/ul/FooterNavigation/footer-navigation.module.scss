@@ -11,6 +11,12 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
+
+	@media (max-width: $tabletSmall) {
+		display: flex;
+		justify-content: space-between;
+		grid-gap: 10px;
+	}
 }
 
 .title {
@@ -25,6 +31,24 @@
 .item {
 	margin-bottom: 48px;
 
+	@media (max-width: $desktopSmall) {
+		margin-bottom: 28px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		margin-bottom: 0;
+	}
+
+	p {
+		@media (max-width: $desktopSmall) {
+			@include text('l')
+		}
+
+		@media (max-width: $tabletSmall) {
+			@include text('m')
+		}
+	}
+
 	a {
 		text-decoration: none;
 	}
@@ -32,4 +56,5 @@
 
 .item:last-child {
 	margin-bottom: 0;
+
 }

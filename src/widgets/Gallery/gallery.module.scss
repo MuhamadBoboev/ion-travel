@@ -14,10 +14,12 @@
 	margin-bottom: 100px;
 
 	@media (max-width: $desktopSmall) {
+		margin-bottom: 57px;
 		padding: 40px;
 	}
 
 	@media (max-width: $tabletSmall) {
+		margin-bottom: 28px;
 		padding: 20px;
 	}
 }

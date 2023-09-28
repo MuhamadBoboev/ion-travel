@@ -2,6 +2,7 @@ import classes from './tours-and-activities.module.scss'
 import { Typography } from '@/shared/ui/Typography'
 import { Button } from '@/shared/ui/Button'
 import { Tours } from './Tours'
+import Link from 'next/link'
 
 function ToursAndActivities() {
 	return (<>
@@ -13,9 +14,13 @@ function ToursAndActivities() {
 							Лови момент!<br />
 							Открой Таджикистан для себя
 						</Typography>
-						<Button className={classes.text_2} >
-							Туры и развлечения
-						</Button>
+
+						<Link href='tours'>
+							<Button className={classes.text_2} >
+								Туры и развлечения
+							</Button>
+						</Link>
+
 					</div>
 					<div className={classes.title_block}>
 						<h3 className={classes.title}>Эмоции, которыми ты захочешь делиться</h3>

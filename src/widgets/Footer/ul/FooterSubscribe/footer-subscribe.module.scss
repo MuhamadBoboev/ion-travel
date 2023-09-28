@@ -25,6 +25,20 @@
 .item {
 	margin-bottom: 48px;
 
+	@media (max-width: $desktopSmall) {
+		margin-bottom: 28px;
+	}
+
+	p {
+		@media (max-width: $desktopSmall) {
+			@include text('l')
+		}
+
+		@media (max-width: $tabletSmall) {
+			@include text('m')
+		}
+	}
+
 	a {
 		text-decoration: none;
 	}

@@ -3,11 +3,12 @@
 .items {
 	display: flex;
 	padding: 4px;
-	background-color: $purple;
+	background-color: #F3F4F6;
+	// background-color: red;
 	border-radius: 80px;
 	width: max-content;
-
 }
+
 
 .item {
 	border-radius: 50%;
@@ -27,4 +28,15 @@
 .active {
 	background-color: $white;
 	color: $primary;
+}
+
+.black {
+	.item {
+		color: $text2;
+	}
+
+	.active {
+		background-color: $indigo;
+		color: $white;
+	}
 }

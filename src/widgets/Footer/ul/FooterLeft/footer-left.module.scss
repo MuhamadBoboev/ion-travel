@@ -4,6 +4,18 @@
 .footer_left {
 	display: flex;
 	flex-direction: column;
+
+	@media (max-width: $desktopSmall) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		grid-gap: 40px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		flex-direction: column;
+		grid-gap: 24px;
+	}
 }
 
 .footer_left__img {
@@ -12,6 +24,7 @@
 	@media (max-width: $tabletSmall) {
 		width: 80px;
 		height: 48px;
+		margin-bottom: 0px;
 	}
 }
 
@@ -19,25 +32,27 @@
 	color: $white;
 	font-size: 2.25rem;
 	line-height: 110%;
+	margin-top: 0;
 	margin-bottom: 28px;
 
 	@media (max-width: $tabletSmall) {
 		font-size: 28px;
+		margin-bottom: 16px;
 	}
 }
 
 .text {
-	color: $white;
-	margin-bottom: 88px;
+	color: $white !important;
+	margin-bottom: 88px !important;
 
+	@media (max-width: $desktopSmall) {
+		margin-bottom: 40px !important;
+	}
 
+	@media (max-width: $desktopSmall) {
+		margin-bottom: 24px !important;
+	}
 }
-
-// .text {
-// 	font-size: 1rem;
-// 	line-height: 150%;
-// 	color: $white;
-// }
 
 .button {
 	display: block;
@@ -53,5 +68,7 @@
 
 	@media (max-width: $tabletSmall) {
 		font-size: 13px;
+		text-align: center;
+		width: -webkit-fill-available;
 	}
 }

@@ -4,30 +4,68 @@ import classes from './banner.module.scss'
 import Link from 'next/link'
 import { Card } from './Card'
 import { Header } from '../Header'
-
-function Banner() {
+import { SectionTitle } from '@/shared/ui/SectionTitle'
+import { Tabs } from '@/shared/ui/Tabs'
+import { Button } from '@/shared/ui/Button'
+interface Props {
+	subtitle?: string
+	title?: string
+	tabs?: TabsItem[]
+	text?: string
+	button?: LinkButton
+}
+interface TabsItem {
+	name: string
+	link: string
+	active: boolean
+}
+interface LinkButton {
+	name: string
+	link: string
+}
+function Banner({ subtitle, title, tabs, text, button }: Props) {
 	return (<div className={classes.wrapper}>
 		<Header />
 		<div className={classes.body} >
-			<div className={classes.block_info}>
-				<h2 className={classes.title} >
-					Откройте Таджикистан с новой стороны
-				</h2>
-				<Typography size='l' className={classes.text}>
-					Близость к природе, и <br />
-					доброжелательность ждут вас
-				</Typography>
-				<Link href='sad' className={classes.button}>
+			<div className={classes.info} >
+				<div className={classes.info_left} >
 					<Typography size='m' >
-						Поехали!
+						{subtitle}
 					</Typography>
-				</Link>
+				</div>
+				<div className={classes.info_center}>
+					<SectionTitle className={classes.info_center_title}>
+						{title}
+					</SectionTitle>
+					<div className={classes.tabs_block} >
+						{tabs && <Tabs tabs={tabs} />}
+					</div>
+					{/* <div> */}
+					{/* <p className={classes.text_5} >
+							{subtitle}
+						</p> */}
+					{/* <Link href='asd' className={classes.info_button}>
+							<Typography size='m' className={classes.text_2}>
+								Все наши туры
+							</Typography>
+						</Link> */}
+					{/* </div> */}
+				</div>
+				<div className={classes.info_right} >
+					<Typography size='l' className={classes.text_3}>
+						{text}
+					</Typography>
+					{button && <Link href={`${button?.link}`} className={classes.link_button}>
+						{button?.name}
+					</Link>}
+				</div>
 			</div>
-			<div className={classes.card_block} >
-				<Card />
+			<div className={classes.tabs_block_mobile} >
+				{tabs && <Tabs tabs={tabs} />}
 			</div>
 		</div>
-	</div>)
+	</div>
+	)
 }
 
 export { Banner }

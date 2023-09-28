@@ -9,14 +9,15 @@ import { useState } from 'react';
 // 	ru: InterfaceLng
 // }
 interface InterfaceLng {
-	nativeName: string
+	// nativeName: string
+	type?: 'white' | 'black'
 }
 // const lngs: InterfaceLngs = {
 // 	en: { nativeName: 'English' },
 // 	ru: { nativeName: 'Russian' },
 // }
 
-function LanguageButton() {
+function LanguageButton({ type = 'white' }: InterfaceLng) {
 
 	const { t, i18n } = useTranslation()
 	const [translate, setTranslate] = useState<Number>(1)
@@ -30,7 +31,10 @@ function LanguageButton() {
 			setTranslate(2)
 		}
 	}
-	return (<div className={classes.items}>
+	return (<div className={clsx(
+		classes.items,
+		type === 'white' ? classes.white : classes.black
+	)}>
 		{/* <div className={clsx(classes.item)} onClick={() => setTranslate(!translate)} >
 			<p>RU</p>
 		</div>

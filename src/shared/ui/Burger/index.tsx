@@ -5,11 +5,18 @@ import { useAppSelector, useAppDispatch } from "@/shared/lib/redux-hooks"
 import { toggleMenu } from '@/widgets/Header/model/menuSlice'
 import clsx from "clsx"
 
-function Burger() {
+interface Props {
+	type?: 'black' | 'white'
+}
+
+function Burger({ type = 'black' }: Props) {
 	const { isOpen } = useAppSelector(state => state.menu)
 	const dispatch = useAppDispatch()
 	return (
-		<div className={classes.body} >
+		<div className={clsx(
+			classes.body,
+			type == 'black' ? classes.black : classes.white
+		)} >
 			<button
 				className={clsx(classes.burger, isOpen && classes.open)}
 				onClick={() => dispatch(toggleMenu())} >

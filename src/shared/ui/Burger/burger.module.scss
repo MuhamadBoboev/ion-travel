@@ -10,16 +10,22 @@
 	padding: 35px;
 
 	@media (max-width: $desktopSmall) {
-		padding: 14px;
+		padding: 14px !important;
 	}
 
 	@media (max-width: $tabletSmall) {
-		padding: 8px;
+		padding: 8px !important;
 	}
 
-	// min-height: 64px;
-	// min-width: 64px;
+}
 
+.black {
+	border: none;
+}
+
+.white {
+	border: 1px solid $primary;
+	padding: 20px;
 }
 
 .burger {

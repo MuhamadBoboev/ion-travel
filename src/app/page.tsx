@@ -1,7 +1,7 @@
 import { Wrapper } from '@/shared/ui/Wrapper'
 import { AboutProject } from '@/widgets/AboutProject'
 import { Advertising } from '@/widgets/Advertising'
-import { Banner } from '@/widgets/Banner'
+import { Banner } from '@/widgets/BannerMainPage'
 import { Gallery } from '@/widgets/Gallery'
 import { Timeline } from '@/widgets/Timeline'
 import { ToursAndActivities } from '@/widgets/ToursAndActivities'
@@ -9,12 +9,12 @@ import { ToursAndActivities } from '@/widgets/ToursAndActivities'
 export default function Home() {
 	return (
 		<Wrapper>
-			{/* <Banner />
+			<Banner />
 			<ToursAndActivities />
 			<Advertising />
 			<Timeline />
 			<Gallery />
-			<AboutProject /> */}
+			<AboutProject />
 		</Wrapper>
 	)
 }

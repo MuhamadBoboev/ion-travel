@@ -14,9 +14,10 @@
 }
 
 .tell {
+	color: $white;
 	font-size: 15px;
 	text-decoration: none;
-	color: $text2;
+	color: $white;
 	min-width: max-content;
 
 	@media (max-width: $desktopSmall) {
@@ -42,9 +43,8 @@
 	display: inline-block;
 	width: max-content;
 	height: auto;
-	color: $text2 !important;
 	padding: 20px 40px;
-	border: 1px solid $text2;
+	border: 1px solid $white;
 	font-size: 15px;
 	color: $white;
 	border-radius: 40px;

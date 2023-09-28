@@ -27,7 +27,7 @@ function Footer() {
 							{t('footerBottom.securityPolicy')}
 						</a>
 					</Typography>
-					<Typography size='m'>
+					<Typography size='m' className={classes.product_by}>
 						{t('footerBottom.developedByBOBO')}
 					</Typography>
 				</div>
