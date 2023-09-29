@@ -3,6 +3,7 @@ import classes from './tours.module.scss'
 import { AboutProject } from '@/widgets/AboutProject'
 import { Wrapper } from '@/shared/ui/Wrapper'
 import { Banner } from '@/widgets/Banner'
+import { Filter } from '@/shared/ui/Filter'
 
 function Tours() {
 	return (
@@ -14,6 +15,7 @@ function Tours() {
 				text='Ты пройдёшь по скрытым от общих глаз улочкам, завернешь в самые колоритные местные дворики, узнаешь об истории города через игру.'
 				button={{ name: 'Поехали!', link: 'sadasd' }}
 			/>
+			<Filter />
 			<Gallery />
 			<AboutProject />
 		</Wrapper>

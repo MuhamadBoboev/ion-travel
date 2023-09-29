@@ -1,6 +1,13 @@
 @import 'src/styles/variables';
 @import 'src/styles/mixins';
 
+.wrapper {
+	@media (max-width: $desktopSmall) {
+		display: flex;
+		justify-content: center;
+	}
+}
+
 .items {
 	display: flex;
 	grid-gap: 16px;
@@ -15,7 +22,7 @@
 	box-sizing: border-box;
 
 	@media (max-width: $tabletSmall) {
-		width: 100%;
+		width: max-content;
 		justify-content: space-between;
 		grid-gap: 8px;
 	}

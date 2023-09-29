@@ -22,7 +22,7 @@ function FooterLeft() {
 				<Link href='out-tours' className={classes.button}>
 					{t('footerLeft.button')}
 				</Link>
-				L</div>
+			</div>
 		</div>
 	)
 }
