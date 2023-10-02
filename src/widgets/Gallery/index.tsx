@@ -35,7 +35,7 @@ function Gallery() {
 			</div>
 			<ul className={classes.items}>
 				{GaleryDate.map((el) =>
-					<li key={el.author} className={classes.item}>
+					<li key={el.link} className={classes.item}>
 						<Link href={el.link} className={classes.item_body} >
 							<div className={classes.item_info}>
 								<div className={classes.item_text_block}>

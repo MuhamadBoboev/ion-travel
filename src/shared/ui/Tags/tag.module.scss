@@ -1,0 +1,57 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.tags {
+	display: flex;
+	padding: 0;
+	list-style: none;
+
+	@media (max-width: $mobile) {
+		width: 288px;
+		overflow: scroll;
+		padding-bottom: 12px;
+	}
+}
+
+.tag {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	color: $text1;
+	border-radius: 80px;
+	border: 1px solid $border;
+	margin-right: 16px;
+	padding: 12px 20px;
+
+	@media (max-width: $tabletSmall) {
+		padding: 8px 12px;
+		margin-right: 8px;
+	}
+
+}
+
+.tag:last-child {
+	margin-right: 0px;
+}
+
+.tag_text {
+	@include text('s');
+
+	@media (max-width: $desktopSmall) {
+		@include text('s')
+	}
+
+	@media (max-width: $tabletSmall) {
+		@include text('xs')
+	}
+
+}
+
+.tag_svg {
+	margin-right: 12px;
+
+	@media (max-width: $desktopSmall) {
+		width: 16px;
+		height: 14px;
+	}
+}

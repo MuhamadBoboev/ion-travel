@@ -19,7 +19,7 @@ function Tabs({ className, tabs }: Props) {
 		)}>
 			<div className={classes.items}>
 				{tabs?.map(el =>
-					<Link key={el.name} href='asd' className={clsx(
+					<Link key={el.name} href={el.link} className={clsx(
 						classes.item,
 						el.active && classes.active
 					)}>

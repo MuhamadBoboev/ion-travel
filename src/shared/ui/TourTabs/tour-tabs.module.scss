@@ -1,0 +1,56 @@
+@import '/src/styles/variables';
+@import '/src/styles/mixins';
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	background-color: $background;
+	grid-row-gap: 16px;
+	padding: 8px;
+	border-radius: 80px;
+	list-style: none;
+	text-decoration: none;
+
+	@media (max-width: $tabletSmall) {
+		grid-row-gap: 12px;
+		background-color: transparent;
+		padding: 0;
+	}
+}
+
+.item {
+	margin-right: 16px;
+	width: max-content;
+	cursor: pointer;
+
+	&:last-child {
+		margin-right: 0px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		margin-right: 12px;
+	}
+}
+
+.body {
+	padding: 12px 20px;
+	border-radius: 80px;
+	background-color: transparent;
+	color: $text2;
+	@include text('l');
+
+	&:active {
+		color: $text1;
+		background-color: $button;
+		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
+	}
+
+	@media (max-width: $desktopSmall) {
+		@include text('s')
+	}
+
+	@media (max-width: $tabletSmall) {
+		border: 1px solid $border;
+	}
+}

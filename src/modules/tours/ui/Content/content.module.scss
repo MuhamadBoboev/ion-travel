@@ -1,0 +1,139 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.body {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	border-radius: 40px;
+	background-color: $white;
+
+	@media (max-width: $desktopSmall) {
+		padding: 24px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		padding: 20px;
+	}
+}
+
+.filter {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 60px;
+	border-bottom: 1px solid $border;
+
+	@media (max-width: $desktopSmall) {
+		margin-bottom: 0px;
+	}
+
+}
+
+.filter_top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+
+	@media (max-width: $tabletSmall) {
+		margin-bottom: 16px;
+	}
+}
+
+.filter_text {
+	@include text('xl');
+
+	@media (max-width: $desktopSmall) {
+		@include text('l')
+	}
+
+	@media (max-width: $tabletSmall) {
+		@include text('s')
+	}
+}
+
+.filter_result_text {
+	@include text('xl');
+
+	span {
+		margin-left: 5px;
+		color: $button;
+	}
+
+	@media (max-width: $desktopSmall) {
+		@include text('l')
+	}
+
+	@media (max-width: $tabletSmall) {
+		@include text('s')
+	}
+}
+
+.filter_body {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 48px;
+	grid-gap: 10px;
+
+	@media (max-width: $desktopSmall) {
+		grid-gap: 24px;
+		margin-bottom: 24px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		flex-direction: column;
+	}
+}
+
+.block_tags {
+	max-width: 834px;
+}
+
+.sort_block {
+	max-width: 300px;
+
+	@media (max-width: $tabletSmall) {
+		max-width: none;
+	}
+}
+
+.sort {
+	display: flex;
+	justify-content: space-between;
+	color: $text2;
+	border-radius: 80px;
+	border: none;
+	@include text('m');
+	width: 100%;
+	padding: 16px 24px;
+	outline: none;
+	background-color: $background;
+
+	@media (max-width: $desktopSmall) {
+		@include text('s');
+		padding: 12px 24px;
+		width: -webkit-fill-available;
+	}
+
+	@media (max-width: $tabletSmall) {
+		width: 100%;
+	}
+
+	option {
+		@include text('m');
+		color: $text2;
+		font-size: 50px;
+	}
+}
+
+.result_items {
+	display: flex;
+	flex-direction: column;
+	grid-gap: 24px;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	@media (max-width: $desktopSmall) {
+		grid-gap: 0px;
+	}
+}
