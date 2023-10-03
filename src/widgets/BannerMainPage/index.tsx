@@ -2,8 +2,10 @@ import { Typography } from '@/shared/ui/Typography'
 import { Wrapper } from "@/shared/ui/Wrapper"
 import classes from './banner.module.scss'
 import Link from 'next/link'
-import { Card } from './Card'
 import { Header } from '../Header'
+// import { Card } from './Card'
+import { CardDate } from './consts/Card'
+import { Card } from '@/shared/ui/Card'
 
 function Banner() {
 	return (<div className={classes.wrapper}>
@@ -24,7 +26,8 @@ function Banner() {
 				</Link>
 			</div>
 			<div className={classes.card_block} >
-				<Card />
+				<Card
+					card={CardDate} />
 			</div>
 		</div>
 	</div>

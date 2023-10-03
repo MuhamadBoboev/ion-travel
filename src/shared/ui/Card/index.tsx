@@ -2,20 +2,29 @@ import { Typography } from '@/shared/ui/Typography'
 import classes from './card.module.scss'
 import Link from 'next/link'
 
-function Card() {
+interface Props {
+	card: Card
+}
+interface Card {
+	title: string
+	text: string
+	image: string
+	link: string
+}
+function Card({ card }: Props) {
 	return (
 		<div className={classes.card} >
 			<div className={classes.card_body} >
 				<div className={classes.bl_img} >
-					<img src='assets/img/card.webp' width={228} height={228} alt='card' />
+					<img src={card.image} width={228} height={228} alt='card' />
 				</div>
 				<p className={classes.card_title}>
-					Тур по Памирскому тракту
+					{card.title}
 				</p>
 				<Typography size='s' className={classes.card_text}>
-					Описание курорта, в две строки и так далее`
+					{card.text}
 				</Typography>
-				<Link href='./asd' className={classes.button} >
+				<Link href={card.link} className={classes.button} >
 					Подробнее
 				</Link>
 			</div>

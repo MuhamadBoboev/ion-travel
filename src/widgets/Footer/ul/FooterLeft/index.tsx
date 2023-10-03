@@ -10,7 +10,7 @@ function FooterLeft() {
 	const { t } = useTranslation('footer')
 	return (
 		<div className={classes.footer_left}>
-			<Link href='/'>
+			<Link href='/' className={classes.logo}>
 				<img className={classes.footer_left__img} src='assets/img/logo.svg' width={132} height={80} alt='logo' /></Link>
 			<div className={classes.text_block}>
 				<h2 className={classes.title} >

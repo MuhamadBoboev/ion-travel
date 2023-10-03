@@ -1,0 +1,116 @@
+@import '/src/styles/variables';
+@import '/src/styles/mixins';
+
+.item {
+	position: absolute;
+}
+
+.item_active {
+	z-index: 5;
+}
+
+.item_ball {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: $button;
+	z-index: 1;
+	cursor: pointer;
+	// animation: ballon 2s ease-out infinite;
+
+	@media (max-width: $tabletSmall) {
+		width: 5px;
+		height: 5px;
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 50%;
+		width: 110%;
+		height: 110%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		border: 0.2px solid $white;
+		animation: ballonItem 1.4s ease-out infinite;
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 50%;
+		width: 125%;
+		height: 125%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		border: 0.2px solid $white;
+		animation: ballonItem 1s ease-in infinite;
+	}
+
+}
+
+@keyframes ballon {
+	to {
+		scale: 2;
+		opacity: 1;
+	}
+
+	from {
+		scale: 1;
+		opacity: 0.9;
+	}
+}
+
+@keyframes ballonItem {
+	to {
+		opacity: 1;
+		scale: 2;
+	}
+
+	from {
+		scale: 1;
+		opacity: 0.5;
+	}
+}
+
+.item_body {
+	opacity: 0;
+	z-index: -1;
+
+	// display: none;
+	@media (max-width: $tabletSmall) {
+		display: none
+	}
+}
+
+.active {
+	// display: inline-block;
+	transition: all .23s;
+	opacity: 1;
+	z-index: 10;
+}
+
+.item_body_mobile {
+	@media (min-width: $tabletSmall) {
+		display: none !important;
+	}
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 5;
+}
+
+.active_mobile {
+	display: inline-block;
+
+	@media (max-width: $tabletSmall) {
+		display: inline-block !important;
+	}
+}
