@@ -1,6 +1,10 @@
 @import '/src/styles/variables';
 @import '/src/styles/mixins';
 
+.wrapper {
+	margin-bottom: 24px;
+}
+
 .bl_img {
 	position: relative;
 	width: 100%;

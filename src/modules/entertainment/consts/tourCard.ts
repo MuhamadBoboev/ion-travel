@@ -7,13 +7,16 @@ export const tourCard = [
 		tags: [
 			{
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Рестораны',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			},
 		]
 	},{
@@ -24,13 +27,16 @@ export const tourCard = [
 		tags: [
 			{
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Рестораны',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			},
 		]
 	},{
@@ -41,13 +47,16 @@ export const tourCard = [
 		tags: [
 			{
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Рестораны',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			},
 		]
 	},{
@@ -58,13 +67,16 @@ export const tourCard = [
 		tags: [
 			{
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Рестораны',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			},
 		]
 	},{
@@ -75,13 +87,16 @@ export const tourCard = [
 		tags: [
 			{
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Душанбе',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			}, {
 				name: 'Рестораны',
-				img: '/assets/icons/tag_beach.svg'
+				img: '/assets/icons/tag_beach.svg',
+				id: Math.random()
 			},
 		]
 	},

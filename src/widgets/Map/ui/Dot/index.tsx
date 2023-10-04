@@ -27,23 +27,30 @@ function Dot({ top, left }: Props) {
 			>
 				<div className={classes.item_ball}
 					onClick={() => setActive(true)}
-				></div>
+				>
+				</div>
 				<div className={
 					clsx(
 						classes.item_body,
 						active && classes.active
 					)
-				} >
+				}>
 					<Card card={CardDate} />
 				</div>
 			</div>
-			<div className={
-				clsx(
-					classes.item_body_mobile,
-					active && classes.active_mobile
-				)
-			} >
-				<Card card={CardDate} />
+			<div className={clsx(
+				classes.item_bl_mobile,
+				active && classes.item_bl_mobile_active
+			)}
+			>
+				<div className={
+					clsx(
+						classes.item_body_mobile,
+						active && classes.active_mobile
+					)
+				} >
+					<Card card={CardDate} />
+				</div>
 			</div>
 		</div>
 	)

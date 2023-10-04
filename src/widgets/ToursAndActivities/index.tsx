@@ -3,9 +3,21 @@ import { Typography } from '@/shared/ui/Typography'
 import { Button } from '@/shared/ui/Button'
 import { Tours } from './Tours'
 import Link from 'next/link'
+import { Tabs } from '@/shared/ui/Tabs'
 
+const TourTabs = [
+	{
+		name: 'Туры по Таджикистану',
+		link: 'tours',
+		active: true
+	}, {
+		name: 'Места для развлечений',
+		link: 'entertainment',
+		active: false
+	},
+]
 function ToursAndActivities() {
-	return (<>
+	return (
 		<div className={classes.wrapper}>
 			<div className={classes.info} >
 				<div className={classes.left_block}>
@@ -14,13 +26,11 @@ function ToursAndActivities() {
 							Лови момент!<br />
 							Открой Таджикистан для себя
 						</Typography>
-
 						<Link href='tours'>
 							<Button className={classes.text_2} >
 								Туры и развлечения
 							</Button>
 						</Link>
-
 					</div>
 					<div className={classes.title_block}>
 						<h3 className={classes.title}>Эмоции, которыми ты захочешь делиться</h3>
@@ -30,10 +40,13 @@ function ToursAndActivities() {
 					<Typography size='xl' className={classes.text_3} >
 						Ты пройдёшь по скрытым от общих глаз улочкам, завернешь в самые колоритные местные дворики, узнаешь об истории города через игру.
 					</Typography>
+					<div className={classes.tabs_mobile} >
+						<Tabs tabs={TourTabs} />
+					</div>
 				</div>
 			</div>
 			<Tours />
 		</div>
-	</>)
+	)
 }
 export { ToursAndActivities }

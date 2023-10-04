@@ -27,7 +27,7 @@ function FooterContacts() {
 			<Typography size='m' className={classes.tell}>
 				{t('footerContacts.tell')}
 			</Typography>
-			<LanguageButton />
+			<LanguageButton type='black' />
 		</div>
 	)
 }

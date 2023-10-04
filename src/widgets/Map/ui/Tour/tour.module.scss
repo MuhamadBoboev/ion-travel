@@ -1,0 +1,36 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.tour_item {
+	padding: 12px;
+	border-radius: 20px;
+	border: 1px solid $white;
+	width: max-content;
+	text-align: center;
+}
+
+.tour_text {
+	@include text('xxs');
+	font-weight: 500;
+	color: $white;
+}
+
+.tour_dot {
+	margin-left: 5px;
+	padding-left: 6px;
+	display: inline-block;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 0px;
+		background-color: $white;
+		transform: translate(-50%, );
+		width: 1px;
+		height: 1px;
+		display: inline-block;
+		border-radius: 50%;
+	}
+}

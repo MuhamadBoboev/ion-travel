@@ -1,6 +1,7 @@
 import { Typography } from '@/shared/ui/Typography'
 import classes from './card.module.scss'
 import Link from 'next/link'
+import { Dispatch, SetStateAction } from 'react'
 
 interface Props {
 	card: Card
@@ -10,7 +11,10 @@ interface Card {
 	text: string
 	image: string
 	link: string
+	active?: boolean
+	setActive?: Dispatch<SetStateAction<Boolean>>
 }
+
 function Card({ card }: Props) {
 	return (
 		<div className={classes.card} >

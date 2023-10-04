@@ -8,7 +8,7 @@ import { MenuMobile } from '../MenuMobile'
 import Link from 'next/link'
 
 
-function Header() {
+function HeaderMain() {
 	return (
 		<header className={classes.main}>
 			<Wrapper className={classes.wrapper}>
@@ -28,4 +28,4 @@ function Header() {
 	)
 }
 
-export { Header }
+export { HeaderMain }

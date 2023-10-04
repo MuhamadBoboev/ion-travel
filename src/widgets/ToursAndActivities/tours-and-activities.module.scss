@@ -95,6 +95,11 @@
 	@media (max-width: $desktopSmall) {
 		max-width: 256px;
 	}
+
+	@media (max-width: $tabletSmall) {
+		max-width: none;
+		flex-direction: column;
+	}
 }
 
 
@@ -147,5 +152,14 @@
 	@media (max-width: $tabletSmall) {
 		// font-size: 11px;
 		@include text('s');
+	}
+}
+
+.tabs_mobile {
+	display: initial;
+	padding-top: 24px;
+
+	@media (min-width: $tabletSmall) {
+		display: none;
 	}
 }

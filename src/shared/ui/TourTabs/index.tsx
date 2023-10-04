@@ -6,7 +6,7 @@ interface Props {
 }
 interface Item {
 	name: string
-	id: string
+	id: string | number
 }
 
 function TourTabs({ items }: Props) {

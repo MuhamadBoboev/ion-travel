@@ -1,3 +1,3 @@
-import { Header } from "./ul/HeaderMain";
+import { HeaderMain } from "./ul/HeaderMain";
 
-export { Header }
+export { HeaderMain }
