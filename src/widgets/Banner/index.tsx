@@ -1,18 +1,19 @@
 import { Typography } from '@/shared/ui/Typography'
-import { Wrapper } from "@/shared/ui/Wrapper"
 import classes from './banner.module.scss'
 import Link from 'next/link'
-import { Card } from './Card'
 import { Header } from '../Header'
 import { SectionTitle } from '@/shared/ui/SectionTitle'
 import { Tabs } from '@/shared/ui/Tabs'
-import { Button } from '@/shared/ui/Button'
+import { ReactNode } from 'react'
+import clsx from 'clsx'
+
 interface Props {
 	subtitle?: string
 	title?: string
 	tabs?: TabsItem[]
 	text?: string
 	button?: LinkButton
+	children?: ReactNode
 }
 interface TabsItem {
 	name: string
@@ -23,10 +24,13 @@ interface LinkButton {
 	name: string
 	link: string
 }
-function Banner({ subtitle, title, tabs, text, button }: Props) {
+function Banner({ subtitle, title, tabs, text, button, children }: Props) {
 	return (<div className={classes.wrapper}>
-		<Header />
-		<div className={classes.body} >
+		{/* <Header /> */}
+		<div className={clsx(
+			classes.body,
+			children && classes.body_children
+		)} >
 			<div className={classes.info} >
 				<div className={classes.info_left} >
 					<Typography size='m' >
@@ -60,9 +64,12 @@ function Banner({ subtitle, title, tabs, text, button }: Props) {
 					</Link>}
 				</div>
 			</div>
-			<div className={classes.tabs_block_mobile} >
-				{tabs && <Tabs tabs={tabs} />}
-			</div>
+			{tabs && <div className={classes.tabs_block_mobile} >
+				<Tabs tabs={tabs} />
+			</div>}
+			{children && <div className={classes.content}>
+				{children}
+			</div>}
 		</div>
 	</div>
 	)

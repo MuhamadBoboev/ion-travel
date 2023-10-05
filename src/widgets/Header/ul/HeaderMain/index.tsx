@@ -6,9 +6,14 @@ import { HeaderRight } from '../HeaderRight'
 import { Burger } from '@/shared/ui/Burger'
 import { MenuMobile } from '../MenuMobile'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
 
 
 function Header() {
+	const pathname = usePathname()
+	console.log(pathname)
+
 	return (
 		<header className={classes.main}>
 			<Wrapper className={classes.wrapper}>

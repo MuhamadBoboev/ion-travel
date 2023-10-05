@@ -10,7 +10,7 @@ import { HeaderMain } from '../HeaderMainPage'
 function BannerMain() {
 	return (
 		<div className={classes.wrapper}>
-			<HeaderMain />
+			{/* <HeaderMain /> */}
 			<div className={classes.body} >
 				<div className={classes.block_info}>
 					<h2 className={classes.title} >

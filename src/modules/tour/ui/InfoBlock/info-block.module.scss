@@ -1,0 +1,138 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.item_body {
+	display: flex;
+	// padding-top: 36px;
+	padding-bottom: 32px;
+	margin-bottom: 28px;
+
+	@media (max-width: $desktopSmall) {
+		flex-direction: column;
+	}
+
+	@media (max-width: $tabletSmall) {
+		// padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 0px;
+	}
+
+}
+
+.item_top {
+
+	display: none;
+	justify-content: space-between;
+
+	@media (max-width: $desktopSmall) {
+		display: flex;
+	}
+}
+
+.title {
+	// @include text('sad')
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 111%;
+	text-transform: uppercase;
+	color: $text1;
+	margin-bottom: 28px;
+
+	@media (max-width: $desktopSmall) {
+		@include text('h5')
+	}
+
+	@media (max-width: $tabletSmall) {
+		@include text('m');
+		font-weight: 500 !important;
+	}
+}
+
+.title_desktop {
+	display: inline-block;
+
+	@media (max-width: $desktopSmall) {
+		display: none;
+	}
+}
+
+.body {
+	// padding-top: 32px;
+	display: flex;
+	grid-gap: 48px;
+	transition: all .23s;
+
+	@media (max-width: $desktopSmall) {
+		grid-gap: 24px;
+	}
+
+	@media (max-width: $tabletSmall) {
+		grid-gap: 8px;
+		flex-direction: column;
+	}
+}
+
+
+.item_img {
+	position: relative;
+	flex: 40%;
+
+	&::after {
+		content: '';
+		width: 100%;
+		padding-bottom: 100%;
+		display: block;
+
+		@media (max-width: $tabletSmall) {
+			padding-bottom: 92.6%;
+		}
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
+		border-radius: 16px;
+
+		@media (max-width: $tabletSmall) {
+			height: 100%;
+		}
+	}
+
+}
+
+.item_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	grid-gap: 24px;
+	flex: 51%;
+
+	@media (max-width: $desktopSmall) {
+		grid-gap: 16px;
+	}
+
+	@media (max-width: $tabletSmall) {
+
+		flex: 100%;
+	}
+}
+
+.text {
+	@include text('l');
+	color: $text2;
+
+	@media (max-width: $desktopSmall) {
+		@include text('s')
+	}
+
+	@media (max-width: $desktopSmall) {
+		// @include text('m')
+	}
+}

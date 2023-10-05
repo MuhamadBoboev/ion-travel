@@ -2,8 +2,8 @@ import { Typography } from '@/shared/ui/Typography'
 import classes from './about-project.module.scss'
 import { SectionTitle } from '@/shared/ui/SectionTitle'
 import Link from 'next/link'
-import { AboutProjectDate } from './AboutProjectDate'
-import { Form } from './Form'
+import { AboutProjectDate } from '../../consts/AboutProjectDate'
+import { Form } from '../Form'
 
 
 function AboutProject() {
