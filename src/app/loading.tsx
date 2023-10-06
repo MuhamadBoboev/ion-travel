@@ -1,4 +1,9 @@
+import { Loader } from "@/modules/loader"
+import { Wrapper } from "@/shared/ui/Wrapper"
+
 function Loading() {
-	return <>	Loading </>
+	return (
+		<Loader />
+	)
 }
 export default Loading

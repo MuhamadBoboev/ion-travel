@@ -1,7 +1,32 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
 .items {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+
+	@media (max-width: $tabletSmall) {
+		display: none;
+	}
+}
+
+.items_mobile {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	@media (min-width: $tabletSmall) {
+		display: none;
+	}
+}
+
+.tabs {
+	@media (max-width: $tabletSmall) {
+		display: none;
+	}
 }

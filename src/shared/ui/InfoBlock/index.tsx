@@ -9,10 +9,10 @@ interface Props {
 }
 interface Item {
 	id: number
-	title: string
-	img: string
-	text: string
-	tags: Tag[]
+	title?: string
+	img?: string
+	text?: string
+	tags?: Tag[]
 }
 interface Tag {
 	name: string
@@ -38,18 +38,18 @@ function InfoBlock({ item }: Props) {
 					classes.body,
 					active && classes.active
 				)} >
-					<div className={classes.item_img} >
+					{item.img && <div className={classes.item_img} >
 						<img src={item.img} width={640} height={640} alt={item.title} />
-					</div>
+					</div>}
 					<div className={classes.item_info} >
 						<div className={classes.item_text}>
 							<p className={classes.text} >
 								{item.text}
 							</p>
 						</div>
-						<div className={classes.item_tags}>
+						{item.tags && <div className={classes.item_tags}>
 							<Tags tags={item.tags} />
-						</div>
+						</div>}
 					</div>
 				</div>
 			</div>

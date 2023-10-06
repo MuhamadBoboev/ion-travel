@@ -1,5 +1,8 @@
 import { Tours } from '@/modules/tours';
-import { metadata } from '../layout';
+import { toursPageMetadata } from '@/shared/consts/seo/metadata';
+
+export const metadata = toursPageMetadata
+
 
 function Page() {
 	return <Tours />

@@ -9,6 +9,8 @@ i18n
 .use(initReactI18next)
 .init ({
 	fallbackLng: 'ru',
+	ns: ['ru', 'en'],
+	defaultNS: 'ru',
 	debug: true,
 	saveMissing: true
 	// detection: {

@@ -1,5 +1,4 @@
-import { HandySvg } from 'handy-svg'
-import classes from './info-block.module.scss'
+import classes from './info-block-locate.module.scss'
 import { useState } from 'react'
 import clsx from 'clsx'
 import { Tags } from '@/shared/ui/Tags'
@@ -20,7 +19,7 @@ interface Tag {
 	id: number
 }
 
-function InfoBlock({ item }: Props) {
+function InfoBlockLocate({ item }: Props) {
 	const [active, setActive] = useState<Boolean>(false)
 	return (
 		<>
@@ -52,4 +51,4 @@ function InfoBlock({ item }: Props) {
 			</div>
 		</>)
 }
-export { InfoBlock }
+export { InfoBlockLocate }
