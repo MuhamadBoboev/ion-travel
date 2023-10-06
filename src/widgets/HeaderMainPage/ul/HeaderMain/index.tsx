@@ -19,7 +19,7 @@ function HeaderMain() {
 						<MenuMobile />
 					</div>
 					<Link href='/' className={classes.logo}>
-						<img src='assets/img/logo.svg' alt='logo' width={108} height={68} />
+						<img src='/assets/img/logo.svg' alt='logo' width={108} height={68} />
 					</Link>
 					<HeaderRight />
 				</div>

@@ -1,24 +1,5 @@
 @import "mixins";
 
-//Montserrat: 400 & 500 & 700
-
-@include font-face($name: 'Montserrat', $weight: 900, $woff: '/assets/fonts/Montserrat-Black.woff');
-@include font-face($name: 'Montserrat', $weight: 700, $woff: '/assets/fonts/Montserrat-Bold.woff');
-@include font-face($name: 'Montserrat', $weight: 500, $woff: '/assets/fonts/Montserrat-Medium.woff');
-@include font-face($name: 'Montserrat', $weight: 400, $woff: '/assets/fonts/Montserrat-Regular.woff');
-
-// Manrope 400 & 800
-
-@include font-face($name: 'Manrope', $weight: 800, $woff: '/assets/fonts/Manrope-Extra-Bold.woff');
-@include font-face($name: 'Manrope', $weight: 500, $woff: '/assets/fonts/Manrope-Medium.woff');
-@include font-face($name: 'Manrope', $weight: 400, $woff: '/assets/fonts/Manrope-Regular.woff');
-
-
-//Inter: 400 & 500
-
-@include font-face($name: 'Inter', $weight: 600, $woff: '/assets/fonts/Inter-Semi-Bold.woff');
-@include font-face($name: 'Inter', $weight: 400, $woff: '/assets/fonts/Inter-Regular.woff');
-
 
 //Gilroy: 400 & 500
 
